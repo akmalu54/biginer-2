@@ -1,4 +1,4 @@
-// DOM Selection
+// DOM Selection metode
 // 1. document.getElementById() -> element
 const judul = document.getElementById ("judul");
 judul.style.color = "yellow";
