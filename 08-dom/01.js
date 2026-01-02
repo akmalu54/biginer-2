@@ -29,8 +29,32 @@ p1.innerHTML = "profil saya";
 
 
 
+// 4. document.querySelector() -> element
+const p4 = document.querySelector("#b p");
+p4.style.color ="yellow";
+p4.style.backgroundColor = "black";
+
+const li2 = document.querySelector ("section#b ul li:nth-child(2)");
+li2.style.backgroundColor = "orange";
+li2.style.color = "white";
+
+// 5. document.querySelectorAll() -> NodeList
+const q = document.querySelectorAll("p");
+for (let i = 0; i < q.length; i++) {
+    if (i % 2 == 0) {
+        q[i].style.backgroundColor = "brown";
+    } else {
+        q[i].style.backgroundColor = "green";
+    }
+}
 
 
+
+// 
+const sectionB = document.getElementById("b");
+const pB = sectionB.getElementsByTagName("p")[0];
+pB.style.backgroundColor = "grey";
+pB.style.color = "white";
 
 
 
